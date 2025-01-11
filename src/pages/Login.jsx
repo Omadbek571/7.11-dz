@@ -53,7 +53,6 @@ function Login() {
             <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
                 <h2 className="text-2xl font-bold text-center text-gray-700 mb-6">Login</h2>
                 <form onSubmit={formik.handleSubmit}>
-                    {/* Username */}
                     <div className="mb-4">
                         <input
                             id="username"
@@ -73,7 +72,6 @@ function Login() {
                         ) : null}
                     </div>
 
-                    {/* Password */}
                     <div className="mb-6">
                         <input
                             id="password"
