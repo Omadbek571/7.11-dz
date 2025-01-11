@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --body_backgroud: white;
+    --body_color: black;
+    --link_color: navy;
+
+}
+
+[data-theme="dark"] {
+    --body_backgroud: black;
+    --body_color: white;
+    --link_color: green;
+
+}

@@ -7,6 +7,24 @@ import ErrorPages from '../pages/ErrorPages';
 import Detailes from '../pages/Detailes';
 
 function MyLayout() {
+
+  const setDarkMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "dark")
+  }
+
+  const setLigthMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "light")
+  }
+
+  const toggenThem = (e) =>{
+    if (e.target.checked) {
+      setDarkMode()
+    }else{
+      setLigthMode()
+    }
+  }
+
+
   return (
     <div>
       <nav className="bg-gray-800 text-white p-4">
@@ -20,6 +38,9 @@ function MyLayout() {
           <li>
             <a href="/register" className="hover:underline">Register</a>
           </li>
+
+          <input type="checkbox" onChange={toggenThem}/>
+
         </ul>
       </nav>
 
